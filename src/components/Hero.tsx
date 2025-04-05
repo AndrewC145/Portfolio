@@ -1,29 +1,66 @@
 import { TextFade } from "./TextFade";
-import jpVideo from "../assets/videos/IMG_0991.mp4";
+import { Contact } from "../types/contact-types";
+import githubIcon from "../assets/svg/github.svg";
+import emailIcon from "../assets/svg/email-svgrepo-com.svg";
+import linkedinIcon from "../assets/svg/linkedin-svgrepo-com.svg";
+import hkGif from "../assets/videos/hk-gif.gif";
 
 function Hero() {
   return (
-    <div className="px-6 pb-12 sm:pb-16 md:px-10 md:pb-20 lg:pb-30 xl:pb-36 2xl:pb-40">
-      <div className="relative top-0 right-0 left-0 h-[50vh] w-full overflow-hidden rounded-3xl sm:h-[60vh] md:h-[72vh] lg:h-[78vh] xl:h-[82vh] 2xl:h-[88vh]">
-        <video className="h-full w-full object-cover" autoPlay loop muted>
-          <source src={jpVideo} type="video/mp4"></source>
-        </video>
-        <div className="absolute inset-0 flex items-end justify-center overflow-hidden">
-          <TextFade className="flex flex-col items-center justify-center" direction="up">
-            <ReuseClass text="HEY THERE," />
-            <ReuseClass text="I'M ANDREW" />
+    <div className="flex h-screen items-center justify-center px-6 pb-12 sm:px-10 sm:pb-16 md:pb-20 lg:pb-30 xl:pb-36 2xl:pb-40">
+      <div className="flex flex-col items-center gap-8 sm:flex-row md:gap-16 lg:gap-24 xl:gap-32">
+        <div className="flex flex-col justify-center">
+          <TextFade
+            className="flex flex-col flex-wrap items-center justify-center gap-4 sm:items-start"
+            direction="up"
+          >
+            <h1 className="font-rhd text-3xl font-semibold md:text-5xl">Hi, I'm Andrew Cao</h1>
+            <h2 className="text-center font-rhd text-base sm:text-start md:text-xl">
+              I'm an aspiring Full Stack Developer based in Markham, ON
+            </h2>
+            <Contacts />
           </TextFade>
         </div>
+        <img
+          src={hkGif}
+          alt="hk-gif"
+          className="size-38 rounded-lg transition-transform duration-300 hover:scale-105 md:size-48 lg:size-60 xl:size-72"
+        />
       </div>
     </div>
   );
 }
 
-function ReuseClass({ text }: { text: string }) {
+function Contacts() {
+  const contacts: Contact[] = [
+    {
+      icon: githubIcon,
+      link: "https://github.com/AndrewC145",
+      alt: "github",
+    },
+    {
+      icon: linkedinIcon,
+      link: "https://www.linkedin.com/in/andrew-cao12/",
+      alt: "linkedin",
+    },
+    {
+      icon: emailIcon,
+      link: "mailto:andrewcao618@gmail.com",
+      alt: "email",
+    },
+  ];
   return (
-    <h1 className="mb-8 text-center font-rhd text-4xl font-bold text-[#F4F4F5] sm:mb-9 sm:text-5xl md:mb-10 md:text-6xl lg:mb-11 lg:text-7xl xl:mb-12 xl:text-8xl 2xl:mb-12 2xl:text-[150px]">
-      {text}
-    </h1>
+    <div className="flex items-center justify-start gap-3">
+      {contacts.map((contact) => (
+        <div key={contact.alt}>
+          <div className="flex cursor-pointer items-center justify-center rounded-lg border-1 border-gray-300 p-1.5">
+            <a href={contact.link} target="_blank" rel="noopener noreferrer">
+              <img className="size-6 invert" src={contact.icon} alt={contact.alt}></img>
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
 
