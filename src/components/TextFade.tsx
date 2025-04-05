@@ -6,7 +6,7 @@ export function TextFade({
   direction,
   children,
   className = "",
-  staggerChildren = 0.1,
+  staggerChildren = 0.4,
 }: {
   direction: "up" | "down";
   children: React.ReactNode;
