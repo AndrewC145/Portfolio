@@ -1,9 +1,7 @@
 import { TextFade } from "./TextFade";
-import { Contact } from "../types/contact-types";
-import githubIcon from "../assets/svg/github.svg";
-import emailIcon from "../assets/svg/email-svgrepo-com.svg";
-import linkedinIcon from "../assets/svg/linkedin-svgrepo-com.svg";
+import Icon from "./Icon";
 import hkGif from "../assets/videos/hk-gif.gif";
+import { contacts } from "../data/contacts";
 
 function Hero() {
   return (
@@ -32,31 +30,12 @@ function Hero() {
 }
 
 function Contacts() {
-  const contacts: Contact[] = [
-    {
-      icon: githubIcon,
-      link: "https://github.com/AndrewC145",
-      alt: "github",
-    },
-    {
-      icon: linkedinIcon,
-      link: "https://www.linkedin.com/in/andrew-cao12/",
-      alt: "linkedin",
-    },
-    {
-      icon: emailIcon,
-      link: "mailto:andrewcao618@gmail.com",
-      alt: "email",
-    },
-  ];
   return (
     <div className="flex items-center justify-start gap-3">
       {contacts.map((contact) => (
         <div key={contact.alt}>
           <div className="flex cursor-pointer items-center justify-center rounded-lg border-1 border-gray-300 p-1.5">
-            <a href={contact.link} target="_blank" rel="noopener noreferrer">
-              <img className="size-6 invert" src={contact.icon} alt={contact.alt}></img>
-            </a>
+            <Icon contact={contact} />
           </div>
         </div>
       ))}

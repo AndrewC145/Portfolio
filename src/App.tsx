@@ -4,6 +4,7 @@ import About from "./components/About";
 import TechStack from "./components/TechStack";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Experience />
         <Projects />
       </main>
+      <Footer />
     </>
   );
 }
