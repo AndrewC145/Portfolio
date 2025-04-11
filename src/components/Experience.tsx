@@ -25,7 +25,7 @@ function WorkExperiences() {
             {experience.title} @ {experience.company}
           </h2>
           <h3 className="mb-3">{experience.date}</h3>
-          <h4>{experience.description}</h4>
+          <h4 className="text-sm sm:text-base">{experience.description}</h4>
           <div className="mt-5 w-fit space-x-4">
             {experience.skills.map((skill, index) => (
               <TechnicalSkills key={index} skills={skill} />

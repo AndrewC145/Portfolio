@@ -10,7 +10,7 @@ export const projects: ProjectType[] = [
     img: todoImg,
     title: "Todo List",
     description:
-      "A simple todo list app built with HTML, CSS, JS. It allows users to add, edit, and delete tasks, and it uses local storage to persist data.",
+      "A simple todo list app built with HTML, CSS, JS. It allows users to add, edit, and delete tasks.",
     technologies: ["HTML", "CSS", "Javascript", "Webpack"],
     github: "https://github.com/AndrewC145/To-Do-List",
   },

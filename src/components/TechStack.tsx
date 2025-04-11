@@ -15,47 +15,47 @@ import {
 const techSkills: stack[] = [
   {
     name: "HTML",
-    icon: <IoLogoHtml5 className="text-3xl" />,
+    icon: <IoLogoHtml5 className="size-7" />,
   },
   {
     name: "CSS",
-    icon: <IoLogoCss3 className="text-3xl" />,
+    icon: <IoLogoCss3 className="size-7" />,
   },
   {
     name: "JavaScript",
-    icon: <SiJavascript className="text-3xl" />,
+    icon: <SiJavascript className="size-7" />,
   },
   {
     name: "TypeScript",
-    icon: <SiTypescript className="text-3xl" />,
+    icon: <SiTypescript className="size-7" />,
   },
   {
     name: "Python",
-    icon: <IoLogoPython className="text-3xl" />,
+    icon: <IoLogoPython className="size-7" />,
   },
   {
     name: "React",
-    icon: <SiReact className="text-3xl" />,
+    icon: <SiReact className="size-7" />,
   },
   {
     name: "Tailwind CSS",
-    icon: <SiTailwindcss className="text-3xl" />,
+    icon: <SiTailwindcss className="size-7" />,
   },
   {
     name: "Vite",
-    icon: <SiVite className="text-3xl" />,
+    icon: <SiVite className="size-7" />,
   },
   {
     name: "Webpack",
-    icon: <SiWebpack className="text-3xl" />,
+    icon: <SiWebpack className="size-7" />,
   },
   {
     name: "Git",
-    icon: <FaGitAlt className="text-3xl" />,
+    icon: <FaGitAlt className="size-7" />,
   },
   {
     name: "Github",
-    icon: <FaGithub className="text-3xl" />,
+    icon: <FaGithub className="size-7" />,
   },
 ];
 
@@ -64,7 +64,7 @@ function TechStack() {
     <Container>
       <div className="h-full w-full">
         <Title header="technologies" />
-        <div className="flex flex-wrap items-center justify-start gap-4 py-4">
+        <div className="grid grid-cols-2 gap-4 py-4 sm:flex sm:flex-wrap sm:items-center sm:justify-start">
           {techSkills.map((skill, index) => (
             <div
               className="flex items-center justify-center rounded-lg border-1 border-gray-600 px-3 py-4 text-nowrap text-gray-200"
