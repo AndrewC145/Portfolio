@@ -10,7 +10,7 @@ function About() {
           <Title header="about me" />
           <Paragraph />
         </div>
-        <img className="size-72 rounded-2xl object-cover" src={pfp}></img>
+        <img className="size-60 rounded-2xl object-cover sm:size-72" src={pfp}></img>
       </div>
     </Container>
   );
