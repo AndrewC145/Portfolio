@@ -5,7 +5,7 @@ import githubIcon from "../assets/svg/github.svg";
 
 function Projects() {
   return (
-    <Container>
+    <Container id="projects">
       <Title header="projects i've made" />
       <ProjectsGrid />
     </Container>

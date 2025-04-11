@@ -4,7 +4,7 @@ import { experiences } from "../data/experience";
 
 function Experience() {
   return (
-    <Container>
+    <Container id="experience">
       <div className="flex flex-col">
         <Title header="places i've worked at" />
         <WorkExperiences />

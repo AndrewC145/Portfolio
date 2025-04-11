@@ -5,7 +5,10 @@ import { contacts } from "../data/contacts";
 
 function Hero() {
   return (
-    <div className="flex h-screen items-center justify-center px-6 pb-12 sm:px-10 sm:pb-16 md:pb-20 lg:pb-30 xl:pb-36 2xl:pb-40">
+    <div
+      id="home"
+      className="flex h-screen items-center justify-center px-6 pb-12 sm:px-10 sm:pb-16 md:pb-20 lg:pb-30 xl:pb-36 2xl:pb-40"
+    >
       <div className="flex flex-col items-center gap-8 sm:flex-row md:gap-16 lg:gap-24 xl:gap-32">
         <div className="flex flex-col justify-center">
           <TextFade

@@ -4,7 +4,7 @@ import Container from "./Container";
 
 function About() {
   return (
-    <Container>
+    <Container id="about">
       <div className="flex flex-col items-center justify-between gap-20 md:flex-row">
         <div className="flex-1 flex-col space-y-6">
           <Title header="about me" />

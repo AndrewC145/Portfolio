@@ -29,10 +29,18 @@ function Header() {
 function ListItems() {
   return (
     <>
-      <li className="transition-colors duration-150 hover:text-blue-200">Home</li>
-      <li className="transition-colors duration-150 hover:text-blue-200">About</li>
-      <li className="transition-colors duration-150 hover:text-blue-200">Experience</li>
-      <li className="transition-colors duration-150 hover:text-blue-200">Projects</li>
+      <li className="transition-colors duration-150 hover:text-blue-200">
+        <a href="#home">Home</a>
+      </li>
+      <li className="transition-colors duration-150 hover:text-blue-200">
+        <a href="#about">About</a>
+      </li>
+      <li className="transition-colors duration-150 hover:text-blue-200">
+        <a href="#experience">Experience</a>
+      </li>
+      <li className="transition-colors duration-150 hover:text-blue-200">
+        <a href="#projects">Projects</a>
+      </li>
     </>
   );
 }
