@@ -1,4 +1,9 @@
-function Container({ children, id }: { children: React.ReactNode; id: string }) {
+type ContainerProps = {
+  children: React.ReactNode;
+  id?: string;
+};
+
+function Container({ children, id }: ContainerProps) {
   return (
     <div
       id={id}
