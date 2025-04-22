@@ -2,7 +2,7 @@ import { stack } from "../types/stack";
 import Container from "./Container";
 import Title from "./Title";
 import { IoLogoCss3, IoLogoPython, IoLogoHtml5 } from "react-icons/io";
-import { FaGithub, FaGitAlt } from "react-icons/fa";
+import { FaGithub, FaGitAlt, FaNodeJs } from "react-icons/fa";
 import {
   SiTypescript,
   SiTailwindcss,
@@ -10,6 +10,7 @@ import {
   SiJavascript,
   SiReact,
   SiVite,
+  SiExpress,
 } from "react-icons/si";
 
 const techSkills: stack[] = [
@@ -40,6 +41,14 @@ const techSkills: stack[] = [
   {
     name: "Tailwind CSS",
     icon: <SiTailwindcss className="size-7" />,
+  },
+  {
+    name: "Node.js",
+    icon: <FaNodeJs className="size-7" />,
+  },
+  {
+    name: "Express.js",
+    icon: <SiExpress className="size-7" />,
   },
   {
     name: "Vite",
