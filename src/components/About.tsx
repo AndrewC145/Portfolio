@@ -22,9 +22,9 @@ function Paragraph() {
       <p className="leading-8 text-gray-300">
         i am currently a second year student at york university studying computer science for
         software development. i have a strong passion for full-stack and web development. i enjoy
-        working with front end technologies such as react, tailwind, and javascript and typescript
-        to build my projects. in my free time, i enjoy playing video games and looking for fashion
-        inspiration.
+        working with front end technologies such as react, tailwind, javascript and typescript, and
+        back-end technologies such as node.js, express, and postgresql. to build my projects. in my
+        free time, i enjoy playing video games and looking for fashion inspiration.
       </p>
       <p className="leading-8 text-gray-300">
         i am currently looking for internships and co-op opportunities to gain experience in the
