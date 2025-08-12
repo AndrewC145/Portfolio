@@ -4,8 +4,26 @@ import ecommerceApp from "../assets/images/ecommerce-app.jpg";
 import cvApplication from "../assets/images/cv-application-img.jpg";
 import memoryCard from "../assets/images/memory-card-game.jpg";
 import calmifyImg from "../assets/images/calmify-img.jpg";
+import clubhouseImg from "../assets/images/clubhouse.png";
+import fileUploaderImg from "../assets/images/uploader.png";
 
 export const projects: ProjectType[] = [
+  {
+    img: fileUploaderImg,
+    title: "File Uploader",
+    description:
+      "A file uploader application where users can upload files and view them in folders. It allows users to create folders, upload files, and view files in a folder.",
+    technologies: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Supabase"],
+    github: "https://github.com/AndrewC145/File-Uploader",
+  },
+  {
+    img: clubhouseImg,
+    title: "Clubhouse",
+    description:
+      "Clubhouse-style application where authenticated users can create and fully view posts",
+    technologies: ["React", "TypeScript", "Node.js", "Express", "Prisma", "PostgreSQL"],
+    github: "https://github.com/AndrewC145/Clubhouse",
+  },
   {
     img: todoImg,
     title: "Todo List",

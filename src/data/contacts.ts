@@ -16,7 +16,7 @@ export const contacts: Contact[] = [
   },
   {
     icon: emailIcon,
-    link: "mailto:andrewcao618@gmail.com",
+    link: "mailto:andrewwcaoo@gmail.com",
     alt: "email",
   },
 ];

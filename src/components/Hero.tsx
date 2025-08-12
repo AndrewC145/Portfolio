@@ -22,11 +22,14 @@ function Hero() {
             <Contacts />
           </TextFade>
         </div>
-        <img
-          src={hkGif}
-          alt="hk-gif"
-          className="size-38 rounded-lg transition-transform duration-300 hover:scale-105 md:size-48 lg:size-60 xl:size-72"
-        />
+        <div className="flex flex-col justify-center gap-2">
+          <img
+            src={hkGif}
+            alt="hk-gif"
+            className="size-38 rounded-lg transition-transform duration-300 hover:scale-105 md:size-48 lg:size-60 xl:size-72"
+          />
+          <p>Gif by Gif Abyss</p>
+        </div>
       </div>
     </div>
   );

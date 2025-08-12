@@ -1,7 +1,7 @@
 import { stack } from "../types/stack";
 import Container from "./Container";
 import Title from "./Title";
-import { IoLogoCss3, IoLogoPython, IoLogoHtml5 } from "react-icons/io";
+import { IoLogoCss3, IoLogoPython, IoLogoHtml5, IoLogoNodejs } from "react-icons/io";
 import { FaGithub, FaGitAlt } from "react-icons/fa";
 import {
   SiTypescript,
@@ -10,6 +10,9 @@ import {
   SiJavascript,
   SiReact,
   SiVite,
+  SiExpress,
+  SiPostgresql,
+  SiPrisma,
 } from "react-icons/si";
 
 const techSkills: stack[] = [
@@ -42,6 +45,22 @@ const techSkills: stack[] = [
     icon: <SiTailwindcss className="size-7" />,
   },
   {
+    name: "Node.js",
+    icon: <IoLogoNodejs className="size-7" />,
+  },
+  {
+    name: "Express.js",
+    icon: <SiExpress className="size-7" />,
+  },
+  {
+    name: "PostgreSQL",
+    icon: <SiPostgresql className="size-7" />,
+  },
+  {
+    name: "Prisma",
+    icon: <SiPrisma className="size-7" />,
+  },
+  {
     name: "Vite",
     icon: <SiVite className="size-7" />,
   },
@@ -71,7 +90,7 @@ function TechStack() {
               key={index}
             >
               {skill.icon}
-              <p className="ml-3 text-base">{skill.name}</p>
+              <p className="ml-3 text-sm sm:text-base">{skill.name}</p>
             </div>
           ))}
         </div>
