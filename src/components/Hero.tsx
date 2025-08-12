@@ -17,7 +17,7 @@ function Hero() {
           >
             <h1 className="font-rhd text-3xl font-semibold md:text-5xl">Hi, I'm Andrew Cao</h1>
             <h2 className="text-center font-rhd text-base sm:text-start md:text-xl">
-              I'm an aspiring Full Stack Developer based in Markham, ON, Canada
+              I'm an aspiring Full Stack Developer based in Canada.
             </h2>
             <Contacts />
           </TextFade>
