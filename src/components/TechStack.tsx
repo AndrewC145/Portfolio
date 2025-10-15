@@ -13,6 +13,7 @@ import {
   SiExpress,
   SiPostgresql,
   SiPrisma,
+  SiDjango,
 } from "react-icons/si";
 
 const techSkills: stack[] = [
@@ -35,6 +36,10 @@ const techSkills: stack[] = [
   {
     name: "Python",
     icon: <IoLogoPython className="size-7" />,
+  },
+  {
+    name: "Django",
+    icon: <SiDjango className="size-7" />,
   },
   {
     name: "React",

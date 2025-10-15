@@ -1,13 +1,27 @@
 import { ProjectType } from "../types/project-types";
-import todoImg from "../assets/images/todo-img.jpg";
-import ecommerceApp from "../assets/images/ecommerce-app.jpg";
-import cvApplication from "../assets/images/cv-application-img.jpg";
-import memoryCard from "../assets/images/memory-card-game.jpg";
 import calmifyImg from "../assets/images/calmify-img.jpg";
 import clubhouseImg from "../assets/images/clubhouse.png";
 import fileUploaderImg from "../assets/images/uploader.png";
+import sayit from "../assets/images/sayit.png";
+import ootduck from "../assets/images/ootduck.png";
 
 export const projects: ProjectType[] = [
+  {
+    img: ootduck,
+    title: "OOTDuck",
+    description:
+      "A progressive full stack web app dedicated to solving issues pertaining to outfits of the day, recommending users random outfits or based on filters",
+    technologies: ["React", "Python", "TypeScript", "Node.js", "Express", "PostgreSQL", "Supabase"],
+    github: "https://github.com/DanielZhong24/OOTDuck",
+  },
+  {
+    img: sayit,
+    title: "Sayit - Blog API",
+    description:
+      "A blog full stack web app, allowing account creation, view posts, and upload comments, and admins can create posts",
+    technologies: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma"],
+    github: "https://github.com/AndrewC145/sayit-blog",
+  },
   {
     img: fileUploaderImg,
     title: "File Uploader",
@@ -23,37 +37,6 @@ export const projects: ProjectType[] = [
       "Clubhouse-style application where authenticated users can create and fully view posts",
     technologies: ["React", "TypeScript", "Node.js", "Express", "Prisma", "PostgreSQL"],
     github: "https://github.com/AndrewC145/Clubhouse",
-  },
-  {
-    img: todoImg,
-    title: "Todo List",
-    description:
-      "A simple todo list app built with HTML, CSS, JS. It allows users to add, edit, and delete tasks.",
-    technologies: ["HTML", "CSS", "Javascript", "Webpack"],
-    github: "https://github.com/AndrewC145/To-Do-List",
-  },
-  {
-    img: ecommerceApp,
-    title: "Embers",
-    description:
-      "A front-end e-commerce application built with React, allowing users to browse products and add them to their cart.",
-    technologies: ["React", "Tailwind CSS", "Vite", "Javascript"],
-    github: "https://github.com/AndrewC145/Ecommerce-App",
-  },
-  {
-    img: cvApplication,
-    title: "CV Application",
-    description:
-      "A CV application built with React, allowing users to create and manage their CVs.",
-    technologies: ["React", "Tailwind CSS", "Vite", "Javascript"],
-    github: "https://github.com/AndrewC145/CV-Application",
-  },
-  {
-    img: memoryCard,
-    title: "Memory Card Game",
-    description: "A memory card game built with React, allowing users to test their memory skills.",
-    technologies: ["React", "Tailwind CSS", "Vite", "Javascript"],
-    github: "https://github.com/AndrewC145/Memory-Card",
   },
   {
     img: calmifyImg,
